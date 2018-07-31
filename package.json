@@ -2,7 +2,8 @@
   "name": "atlas-style",
   "version": "1.0.0",
   "description": "Atlas scss theme with variables",
-  "main": "index.js",
+  "main": "dist/atlas.style.css",
+  "files": "dist",
   "scripts": {
     "build": "bili src/index.scss"
   },
