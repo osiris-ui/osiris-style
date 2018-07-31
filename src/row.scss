@@ -1,0 +1,91 @@
+@import 'variables';
+
+.a-row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+
+  &.is-justify-flex-end {
+    justify-content: flex-end;
+  }
+
+  &.is-justify-center {
+    justify-content: center;
+  }
+
+  &.is-justify-space-between {
+    justify-content: space-between;
+  }
+
+  &.is-justify-space-around {
+    justify-content: space-around;
+  }
+
+  &.is-justify-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &.is-align-flex-end {
+    align-items: flex-end;
+  }
+
+  &.is-align-center {
+    align-items: center;
+  }
+
+  &.is-align-baseline {
+    align-items: baseline;
+  }
+
+  &.is-align-stretch {
+    align-items: stretch;
+  }
+
+  &.is-content-flex-end {
+    align-content: flex-end;
+  }
+
+  &.is-content-center {
+    align-content: center;
+  }
+
+  &.is-content-baseline {
+    align-content: baseline;
+  }
+
+  &.is-content-stretch {
+    align-content: stretch;
+  }
+
+  &.is-direction-row {
+    flex-direction: row;
+  }
+
+  &.is-direction-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &.is-direction-column {
+    flex-direction: column;
+  }
+
+  &.is-direction-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &.is-wrap {
+    flex-wrap: wrap;
+  }
+
+  &.is-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &.is-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &.is-wrap-reverse {
+	  flex-wrap: wrap-reverse;
+  }
+}

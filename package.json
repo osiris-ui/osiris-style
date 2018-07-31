@@ -1,6 +1,6 @@
 {
   "name": "atlas-style",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Atlas scss theme with variables",
   "main": "dist/atlas.style.css",
   "files": "dist",
