@@ -1,0 +1,80 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  letter-spacing: 0;
+  line-height: #{$font-size-base + 8px};
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-primary-gradient;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-text-primary;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  letter-spacing: 0;
+  color: $color-text-primary;
+  line-height: #{$font-size-base + 8px};
+}
+
+p.small {
+  font-size: $font-size-small;
+  font-weight: $font-weight-base;
+  letter-spacing: 0;
+  color: $color-text-primary;
+  line-height: #{$font-size-small + 8px};
+}
+
+small {
+  font-size: $font-size-small;
+  font-weight: $font-weight-base;
+  letter-spacing: 0;
+  color: $color-text-placeholder;
+  line-height: #{$font-size-small + 8px};
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid $color-border;
+}

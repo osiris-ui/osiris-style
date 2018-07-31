@@ -1,0 +1,24 @@
+{
+  "name": "atlas-style",
+  "version": "1.0.0",
+  "description": "Atlas scss theme with variables",
+  "main": "index.js",
+  "scripts": {
+    "build": "bili src/index.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cotabox/atlas-style.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cotabox/atlas-style/issues"
+  },
+  "homepage": "https://github.com/Cotabox/atlas-style#readme",
+  "devDependencies": {
+    "bili": "^3.1.2",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3"
+  }
+}
