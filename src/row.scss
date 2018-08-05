@@ -3,7 +3,8 @@
 .a-row {
   box-sizing: border-box;
   display: flex;
-  flex: 0 1 auto;
+  position: relative;
+  width: 100%;
 
   &.is-justify-flex-end {
     justify-content: flex-end;

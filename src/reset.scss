@@ -1,6 +1,10 @@
 @import 'variables';
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 html, body {
   font-family: 'Lato', sans-serif;
   font-weight: $font-weight-base;
