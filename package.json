@@ -1,8 +1,8 @@
 {
   "name": "atlas-style",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Atlas scss theme with variables",
-  "main": "dist/atlas.style.css",
+  "main": "dist/atlas-style.css",
   "files": ["dist"],
   "scripts": {
     "build": "bili src/index.scss"
