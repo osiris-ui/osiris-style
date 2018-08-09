@@ -23,9 +23,14 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: $color-text-primary;
   font-weight: 700;
+}
+
+.h1 {
+  font-size: 1.7rem !important;
+  line-height: 2.4rem !important;
 }
 
 h1 {
@@ -33,9 +38,19 @@ h1 {
   line-height: 2.4rem;
 }
 
+.h2 {
+  font-size: 1.5rem !important;
+  line-height: 2.2rem !important;
+}
+
 h2 {
   font-size: 1.5rem;
   line-height: 2.2rem;
+}
+
+.h3 {
+  font-size: 1.3rem !important;
+  line-height: 1.9rem !important;
 }
 
 h3 {
@@ -43,14 +58,29 @@ h3 {
   line-height: 1.9rem;
 }
 
+.h4 {
+  font-size: 1.2rem !important;
+  line-height: 1.8rem !important;
+}
+
 h4 {
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
 
-h5 {
+.h5 {
   font-size: 1.1rem;
   line-height: 1.7rem;
+}
+
+h5 {
+  font-size: 1.1rem !important;
+  line-height: 1.7rem !important;
+}
+
+.h6 {
+  font-size: 1rem !important;
+  line-height: 1.6rem !important;
 }
 
 h6 {
@@ -59,11 +89,11 @@ h6 {
 }
 
 p {
-  font-size: $font-size-base;
+  font-size: 1rem;
   font-weight: $font-weight-base;
   letter-spacing: 0;
   color: $color-text-primary;
-  line-height: #{$font-size-base + 8px};
+  line-height: 1.5rem;
 }
 
 p.small {
