@@ -5,7 +5,8 @@
   "main": "dist/atlas-style.css",
   "files": ["dist"],
   "scripts": {
-    "build": "bili src/index.scss"
+    "build": "bili src/index.scss",
+    "dev": "bili src/index.scss --watch"
   },
   "repository": {
     "type": "git",
