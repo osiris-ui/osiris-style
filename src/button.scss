@@ -1,0 +1,35 @@
+@import 'variables';
+
+.a-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  color: $color-text-regular;
+  border: 1px solid $color-border-light;
+  background: #FFF;
+  border-radius: 3px;
+  padding: 1rem 3rem;
+
+  &.a-button--default {
+    &:hover {
+      background-color: lighten($color-primary, 50%);
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+  }
+
+  &.a-button--primary {
+    color: #FFF;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    &:hover {
+      background-color: lighten($color-primary, 6%);
+      border-color: lighten($color-primary, 6%);
+    }
+    &:active {
+      background-color: darken($color-primary, 6%);
+      border-color: darken($color-primary, 6%);
+    }
+  }
+}

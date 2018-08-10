@@ -108,7 +108,7 @@ small {
   font-size: $font-size-small;
   font-weight: $font-weight-base;
   letter-spacing: 0;
-  color: $color-text-placeholder;
+  color: $color-border-lighter;
   line-height: #{$font-size-small + 8px};
 }
 
@@ -116,5 +116,5 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
   border: 0;
-  border-top: 1px solid $color-border;
+  border-top: 1px solid $color-border-lighter;
 }
