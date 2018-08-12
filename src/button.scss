@@ -13,22 +13,39 @@
 
   &.is-disabled {
     cursor: not-allowed;
-    background-color: lighten($color-primary, 50%);
-    border-color: lighten($color-border-light, 16%);
-    color: lighten($color-text-regular, 50%);
+    background-color: mix(#FFF, $color-primary, 50%);
+    border-color: mix(#FFF, $color-border-light, 16%);
+    color: mix(#FFF, $color-text-regular, 50%);
   }
 
   &.a-button--default {
+
     &:hover, &:active {
-      background-color: lighten($color-primary, 50%);
+      background-color: mix(#FFF, $color-primary, 90%);
       border-color: $color-primary;
       color: $color-primary;
     }
 
+    &.is-plain {
+      border-color: $color-border-light;
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      border-color: $color-primary;
+      background-color: #FFF;
+      color: $color-primary;
+    }
+
     &.is-disabled, .is-disabled:hover, .is-disabled:active {
-      background-color: lighten($color-primary, 50%);
-      border-color: lighten($color-border-light, 16%);
-      color: lighten($color-text-regular, 50%);
+      background-color: #FFF;
+      border-color: mix(#FFF, $color-border-light, 16%);
+      color: mix(#FFF, $color-text-regular, 70%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, .is-plain.is-disabled:active {
+      background-color: #FFF;
+      border-color: mix(#FFF, $color-border-light, 16%);
+      color: mix(#FFF, $color-text-regular, 70%);
     }
   }
 
@@ -37,8 +54,8 @@
     background-color: $color-primary;
     border-color: $color-primary;
     &:hover, &:focus {
-      background-color: lighten($color-primary, 6%);
-      border-color: lighten($color-primary, 6%);
+      background-color: mix(#FFF, $color-primary, 25%);
+      border-color: mix(#FFF, $color-primary, 25%);
     }
 
     &:active, &:visited {
@@ -46,10 +63,27 @@
       border-color: darken($color-primary, 6%);
     }
 
+    &.is-plain {
+      color: $color-primary;
+      background-color: mix(#FFF, $color-primary, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-primary, 6%);
+      border-color: mix(#FFF, $color-primary, 6%);
+      color: #FFF;
+    }
+
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      background-color: lighten($color-primary, 20%);
-      border-color: lighten($color-primary, 20%);
+      background-color: mix(#FFF, $color-primary, 50%);
+      border-color: mix(#FFF, $color-primary, 50%);
       color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-primary, 50%);
+      background-color: mix(#FFF, $color-primary, 95%);
+      border-color: mix(#FFF, $color-primary, 70%);
     }
   }
 
@@ -58,8 +92,8 @@
     background-color: $color-secondary;
     border-color: $color-secondary;
     &:hover, &:focus {
-      background-color: lighten($color-secondary, 6%);
-      border-color: lighten($color-secondary, 6%);
+      background-color: mix(#FFF, $color-secondary, 25%);
+      border-color: mix(#FFF, $color-secondary, 25%);
     }
 
     &:active, &:visited {
@@ -67,10 +101,27 @@
       border-color: darken($color-secondary, 6%);
     }
 
+    &.is-plain {
+      color: $color-secondary;
+      background-color: mix(#FFF, $color-secondary, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-secondary, 6%);
+      border-color: mix(#FFF, $color-secondary, 6%);
+      color: #FFF;
+    }
+
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      background-color: lighten($color-secondary, 20%);
-      border-color: lighten($color-secondary, 20%);
+      background-color: mix(#FFF, $color-secondary, 50%);
+      border-color: mix(#FFF, $color-secondary, 50%);
       color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-secondary, 50%);
+      background-color: mix(#FFF, $color-secondary, 95%);
+      border-color: mix(#FFF, $color-secondary, 70%);
     }
   }
 
@@ -79,8 +130,8 @@
     background-color: $color-tertiary;
     border-color: $color-tertiary;
     &:hover, &:focus {
-      background-color: lighten($color-tertiary, 6%);
-      border-color: lighten($color-tertiary, 6%);
+      background-color: mix(#FFF, $color-tertiary, 25%);
+      border-color: mix(#FFF, $color-tertiary, 25%);
     }
 
     &:active, &:visited {
@@ -88,10 +139,26 @@
       border-color: darken($color-tertiary, 6%);
     }
 
+    &.is-plain {
+      color: $color-tertiary;
+      background-color: mix(#FFF, $color-tertiary, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-tertiary, 6%);
+      border-color: mix(#FFF, $color-tertiary, 6%);
+      color: #FFF;
+    }
+
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      background-color: lighten($color-tertiary, 20%);
-      border-color: lighten($color-tertiary, 20%);
+      background-color: mix(#FFF, $color-tertiary, 50%);
+      border-color: mix(#FFF, $color-tertiary, 50%);
       color: darken(#FFF, 2%);
+    }
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-tertiary, 50%);
+      background-color: mix(#FFF, $color-tertiary, 95%);
+      border-color: mix(#FFF, $color-tertiary, 70%);
     }
   }
 
@@ -100,8 +167,8 @@
     background-color: $color-success;
     border-color: $color-success;
     &:hover, &:focus {
-      background-color: lighten($color-success, 6%);
-      border-color: lighten($color-success, 6%);
+      background-color: mix(#FFF, $color-success, 25%);
+      border-color: mix(#FFF, $color-success, 25%);
     }
 
     &:active, &:visited {
@@ -109,10 +176,27 @@
       border-color: darken($color-success, 6%);
     }
 
+    &.is-plain {
+      color: $color-success;
+      background-color: mix(#FFF, $color-success, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-success, 6%);
+      border-color: mix(#FFF, $color-success, 6%);
+      color: #FFF;
+    }
+
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      background-color: lighten($color-success, 20%);
-      border-color: lighten($color-success, 20%);
+      background-color: mix(#FFF, $color-success, 50%);
+      border-color: mix(#FFF, $color-success, 50%);
       color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-success, 50%);
+      background-color: mix(#FFF, $color-success, 95%);
+      border-color: mix(#FFF, $color-success, 70%);
     }
   }
 
@@ -121,8 +205,8 @@
     background-color: $color-warning;
     border-color: $color-warning;
     &:hover, &:focus {
-      background-color: lighten($color-warning, 6%);
-      border-color: lighten($color-warning, 6%);
+      background-color: mix(#FFF, $color-warning, 25%);
+      border-color: mix(#FFF, $color-warning, 25%);
     }
 
     &:active, &:visited {
@@ -130,10 +214,27 @@
       border-color: darken($color-warning, 6%);
     }
 
+    &.is-plain {
+      color: $color-warning;
+      background-color: mix(#FFF, $color-warning, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-warning, 6%);
+      border-color: mix(#FFF, $color-warning, 6%);
+      color: #FFF;
+    }
+
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      background-color: lighten($color-warning, 20%);
-      border-color: lighten($color-warning, 20%);
+      background-color: mix(#FFF, $color-warning, 50%);
+      border-color: mix(#FFF, $color-warning, 50%);
       color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-warning, 50%);
+      background-color: mix(#FFF, $color-warning, 95%);
+      border-color: mix(#FFF, $color-warning, 70%);
     }
   }
 
@@ -142,8 +243,8 @@
     background-color: $color-danger;
     border-color: $color-danger;
     &:hover, &:focus {
-      background-color: lighten($color-danger, 6%);
-      border-color: lighten($color-danger, 6%);
+      background-color: mix(#FFF, $color-danger, 25%);
+      border-color: mix(#FFF, $color-danger, 25%);
     }
 
     &:active, &:visited {
@@ -151,10 +252,27 @@
       border-color: darken($color-danger, 6%);
     }
 
+    &.is-plain {
+      color: $color-danger;
+      background-color: mix(#FFF, $color-danger, 90%);
+    }
+
+    &.is-plain:hover, &.is-plain:active {
+      background-color: mix(#FFF, $color-danger, 6%);
+      border-color: mix(#FFF, $color-danger, 6%);
+      color: #FFF;
+    }
+
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      background-color: lighten($color-danger, 20%);
-      border-color: lighten($color-danger, 20%);
+      background-color: mix(#FFF, $color-danger, 50%);
+      border-color: mix(#FFF, $color-danger, 50%);
       color: darken(#FFF, 2%);
+    }
+
+    &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
+      color: mix(#FFF, $color-danger, 50%);
+      background-color: mix(#FFF, $color-danger, 95%);
+      border-color: mix(#FFF, $color-danger, 70%);
     }
   }
 
@@ -163,7 +281,7 @@
     background-color: transparent;
     border-color: transparent;
     &:hover, &:focus {
-      color: lighten($color-primary, 10%);
+      color: mix(#FFF, $color-primary, 25%);
       outline: none;
     }
 
@@ -173,7 +291,7 @@
     }
 
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      color: lighten($color-text-regular, 50%);
+      color: mix(#FFF, $color-text-regular, 70%);
     }
   }
 
