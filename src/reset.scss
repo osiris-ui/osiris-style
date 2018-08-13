@@ -96,6 +96,13 @@ p {
   line-height: 1.5rem;
 }
 
+small {
+  font-size: $font-size-base;
+  letter-spacing: 0;
+  color: $color-border-normal;
+  line-height: #{$font-size-small + 8px};
+}
+
 .small {
   font-size: $font-size-small;
   font-weight: $font-weight-base;
@@ -104,11 +111,6 @@ p {
   line-height: #{$font-size-small + 8px};
 }
 
-small {
-  letter-spacing: 0;
-  color: $color-border-normal;
-  line-height: #{$font-size-small + 8px};
-}
 
 hr {
   margin-top: 10px;
