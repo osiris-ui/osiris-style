@@ -1,0 +1,166 @@
+@import 'variables';
+
+.a-input {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+
+  .a-input__inner {
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid $color-border-lighter;
+    color: $color-text-regular;
+    outline: none;
+
+    &::placeholder {
+      color: $color-border-light;
+    }
+
+    &:hover, &:focus {
+      border-color: $color-primary;
+
+      &::placeholder {
+        color: $color-border-normal;
+      }
+    }
+
+    &:active {
+      border-color: $color-primary;
+    }
+  }
+
+  &.is-disabled .a-input__inner {
+    background-color: $color-border-lighter;
+    border-color: $color-border-light;
+
+    &:hover {
+      cursor: not-allowed;
+      background-color: $color-border-lighter;
+      border-color: $color-border-light;
+
+      &::placeholder {
+        color: $color-border-light;
+      }
+    }
+  }
+
+  i {
+    position: absolute;
+    color: $color-border-light;
+  }
+
+  &:hover i, &:focus i {
+    color: $color-primary;
+  }
+
+  &.a-input--mini {
+    .a-input__inner {
+      padding: .4rem;
+    }
+
+    &.a-input__prefix {
+      .a-input__icon--prefix {
+        top: .3rem;
+        left: .4rem;
+      }
+    }
+
+    &.a-input__suffix {
+      .a-input__icon--suffix {
+        top: .3rem;
+        right: .4rem;
+      }
+    }
+  }
+
+  &.a-input--small {
+    .a-input__inner {
+      padding: .6rem;
+    }
+
+    &.a-input__prefix {
+      .a-input__icon--prefix {
+        top: .5rem;
+        left: .4rem;
+      }
+    }
+
+    &.a-input__suffix {
+      .a-input__icon--suffix {
+        top: .5rem;
+        right: .4rem;
+      }
+    }
+  }
+
+  &.a-input--normal {
+    .a-input__inner {
+      padding: .8rem;
+    }
+
+    &.a-input__prefix {
+      .a-input__icon--prefix {
+        top: .6rem;
+        left: .6rem;
+      }
+    }
+
+    &.a-input__suffix {
+      .a-input__icon--suffix {
+        top: .6rem;
+        right: .6rem;
+      }
+    }
+  }
+
+  &.a-input--large {
+    .a-input__inner {
+      padding: 1rem;
+    }
+
+    &.a-input__prefix {
+      .a-input__icon--prefix {
+        top: .8rem;
+        left: .8rem;
+      }
+    }
+
+    &.a-input__suffix {
+      .a-input__icon--suffix {
+        top: .8rem;
+        right: .8rem;
+      }
+    }
+  }
+
+  &.a-input__prefix .a-input__inner {
+    padding-left: 2rem;
+  }
+
+  &.a-input__suffix .a-input__inner {
+    padding-right: 2rem;
+  }
+
+  &.is-error {
+    .a-input__inner {
+      border-color: $color-danger;
+    }
+
+    i {
+      color: $color-danger;
+    }
+  }
+
+  &.is-success {
+    .a-input__inner {
+      border-color: $color-success;
+    }
+
+    i {
+      color: $color-success;
+    }
+  }
+}
+
+
