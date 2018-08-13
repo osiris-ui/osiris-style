@@ -105,10 +105,8 @@ p {
 }
 
 small {
-  font-size: $font-size-small;
-  font-weight: $font-weight-base;
   letter-spacing: 0;
-  color: $color-border-light;
+  color: $color-border-normal;
   line-height: #{$font-size-small + 8px};
 }
 
