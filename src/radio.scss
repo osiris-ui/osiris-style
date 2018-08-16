@@ -25,7 +25,7 @@
   }
   &__inner:checked + &__label:before {
     border-width: 0.3rem;
-    border-color: $color-primary;
+    border-color: darken($color-primary, 6%);
   }
   &__label {
     margin: 0 .7rem;
