@@ -1,0 +1,42 @@
+.a-form {
+  display: block;
+}
+
+.a-form-item {
+  display: flex;
+  align-items: center;
+
+  &__content {
+    flex: 1 1 auto;
+  }
+
+  &__label {
+    margin-right: 1rem;
+  }
+}
+
+.a-form--top {
+  .a-form-item {
+    flex-direction: column;
+  }
+}
+
+.a-form--left {
+  .a-form-item {
+    justify-content: flex-start;
+
+    &__label {
+      text-align: left;
+    }
+  }
+}
+
+.a-form--right {
+  .a-form-item {
+    justify-content: flex-end;
+
+    &__label {
+      text-align: right;
+    }
+  }
+}
