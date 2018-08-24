@@ -1,27 +1,27 @@
 {
-  "name": "atlas-style",
+  "name": "@osiris-ui/style",
   "version": "0.7.0",
-  "description": "Atlas scss theme with variables",
-  "main": "dist/atlas-style.css",
+  "description": "Osiris scss theme with variables",
+  "main": "dist/osiris-style.css",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build:css": "node-sass --include-path src src/index.scss dist/atlas-style.css --output-style compressed",
+    "build:css": "node-sass --include-path src src/index.scss dist/osiris-style.css --output-style compressed",
     "copyfiles": "copyfiles -f src/fonts/*.* dist/fonts/",
     "build": "npm run copyfiles && npm run build:css",
     "dev": "nodemon -e scss -x \"npm run build\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cotabox/atlas-style.git"
+    "url": "git+https://github.com/osiris-ui/osiris-style.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Cotabox/atlas-style/issues"
+    "url": "https://github.com/osiris-ui/osiris-style/issues"
   },
-  "homepage": "https://github.com/Cotabox/atlas-style#readme",
+  "homepage": "https://github.com/osiris-ui/osiris-style#readme",
   "devDependencies": {
     "bili": "^3.1.2",
     "copyfiles": "^2.0.0",
