@@ -125,40 +125,40 @@
     }
   }
 
-  &.a-button--tertiary {
+  &.a-button--info {
     color: #FFF;
-    background-color: $color-tertiary;
-    border-color: $color-tertiary;
+    background-color: $color-info;
+    border-color: $color-info;
     &:hover, &:focus {
-      background-color: mix(#FFF, $color-tertiary, 25%);
-      border-color: mix(#FFF, $color-tertiary, 25%);
+      background-color: mix(#FFF, $color-info, 25%);
+      border-color: mix(#FFF, $color-info, 25%);
     }
 
     &:active, &:visited {
-      background-color: darken($color-tertiary, 6%);
-      border-color: darken($color-tertiary, 6%);
+      background-color: darken($color-info, 6%);
+      border-color: darken($color-info, 6%);
     }
 
     &.is-plain {
-      color: $color-tertiary;
-      background-color: mix(#FFF, $color-tertiary, 90%);
+      color: $color-info;
+      background-color: mix(#FFF, $color-info, 90%);
     }
 
     &.is-plain:hover, &.is-plain:active {
-      background-color: mix(#FFF, $color-tertiary, 6%);
-      border-color: mix(#FFF, $color-tertiary, 6%);
+      background-color: mix(#FFF, $color-info, 6%);
+      border-color: mix(#FFF, $color-info, 6%);
       color: #FFF;
     }
 
     &.is-disabled, .is-disabled:hover, &.is-disabled:active {
-      background-color: mix(#FFF, $color-tertiary, 50%);
-      border-color: mix(#FFF, $color-tertiary, 50%);
+      background-color: mix(#FFF, $color-info, 50%);
+      border-color: mix(#FFF, $color-info, 50%);
       color: darken(#FFF, 2%);
     }
     &.is-plain.is-disabled, .is-plain.is-disabled:hover, &.is-plain.is-disabled:active {
-      color: mix(#FFF, $color-tertiary, 50%);
-      background-color: mix(#FFF, $color-tertiary, 95%);
-      border-color: mix(#FFF, $color-tertiary, 70%);
+      color: mix(#FFF, $color-info, 50%);
+      background-color: mix(#FFF, $color-info, 95%);
+      border-color: mix(#FFF, $color-info, 70%);
     }
   }
 

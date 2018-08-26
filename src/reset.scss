@@ -19,7 +19,7 @@ a {
 
   &:hover,
   &:focus {
-    color: $color-primary-gradient;
+    color: darken($color-primary, 6%);
   }
 }
 
