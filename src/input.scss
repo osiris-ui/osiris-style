@@ -1,11 +1,11 @@
 @import 'variables';
 
-.a-input {
+.o-input {
   display: inline-block;
   position: relative;
   max-width: 100%;
 
-  .a-input__inner {
+  .o-input__inner {
     font-size: 1rem;
     width: 100%;
     border-radius: 4px;
@@ -30,7 +30,7 @@
     }
   }
 
-  &.is-disabled .a-input__inner {
+  &.is-disabled .o-input__inner {
     background-color: $color-border-lighter;
     border-color: $color-border-light;
 
@@ -54,96 +54,96 @@
     color: $color-primary;
   }
 
-  &.a-input--mini {
-    .a-input__inner {
+  &.o-input--mini {
+    .o-input__inner {
       padding: .4rem;
     }
 
-    &.a-input__prefix {
-      .a-input__icon--prefix {
+    &.o-input__prefix {
+      .o-input__icon--prefix {
         top: .3rem;
         left: .4rem;
       }
     }
 
-    &.a-input__suffix {
-      .a-input__icon--suffix {
+    &.o-input__suffix {
+      .o-input__icon--suffix {
         top: .3rem;
         right: .4rem;
       }
     }
   }
 
-  &.a-input--small {
-    .a-input__inner {
+  &.o-input--small {
+    .o-input__inner {
       padding: .6rem;
     }
 
-    &.a-input__prefix {
-      .a-input__icon--prefix {
+    &.o-input__prefix {
+      .o-input__icon--prefix {
         top: .5rem;
         left: .4rem;
       }
     }
 
-    &.a-input__suffix {
-      .a-input__icon--suffix {
+    &.o-input__suffix {
+      .o-input__icon--suffix {
         top: .5rem;
         right: .4rem;
       }
     }
   }
 
-  &.a-input--normal {
-    .a-input__inner {
+  &.o-input--normal {
+    .o-input__inner {
       padding: .8rem;
     }
 
-    &.a-input__prefix {
-      .a-input__icon--prefix {
+    &.o-input__prefix {
+      .o-input__icon--prefix {
         top: .6rem;
         left: .65rem;
       }
     }
 
-    &.a-input__suffix {
-      .a-input__icon--suffix {
+    &.o-input__suffix {
+      .o-input__icon--suffix {
         top: .6rem;
         right: .65rem;
       }
     }
   }
 
-  &.a-input--large {
-    .a-input__inner {
+  &.o-input--large {
+    .o-input__inner {
       padding: 1rem;
     }
 
-    &.a-input__prefix {
-      .a-input__icon--prefix {
+    &.o-input__prefix {
+      .o-input__icon--prefix {
         top: .8rem;
         left: .8rem;
       }
     }
 
-    &.a-input__suffix {
-      .a-input__icon--suffix {
+    &.o-input__suffix {
+      .o-input__icon--suffix {
         top: .8rem;
         right: .8rem;
       }
     }
   }
 
-  &.a-input__prefix .a-input__inner {
+  &.o-input__prefix .o-input__inner {
     padding-left: 2rem;
   }
 
-  &.a-input__suffix .a-input__inner {
+  &.o-input__suffix .o-input__inner {
     padding-right: 2rem;
   }
 
   &.is-error {
-    .a-input__inner {
+    .o-input__inner {
       border-color: $color-danger;
     }
 
@@ -153,7 +153,7 @@
   }
 
   &.is-success {
-    .a-input__inner {
+    .o-input__inner {
       border-color: $color-success;
     }
 

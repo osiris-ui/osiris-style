@@ -1,124 +1,124 @@
 @import 'variables';
 
-.a-col-0 {
+.o-col-0 {
   flex: 0 0 auto;
 }
 
-.a-col-offset-0 {
+.o-col-offset-0 {
   margin-left: 0;
 }
 
 @for $i from 1 through 24 {
-  .a-col-#{$i} {
+  .o-col-#{$i} {
     flex: 0 0 auto;
     flex-basis: $base-width * $i;
     max-width: $base-width * $i;
   }
-  .a-col-offset-#{$i} {
+  .o-col-offset-#{$i} {
     margin-left: $base-width * $i;
   }
 }
 
 @media screen and (max-width: $xs-breaking-point) {
-  .a-col-xs-0 {
+  .o-col-xs-0 {
     flex: 0 0 auto;
   }
 
-  .a-col-xs-offset-0 {
+  .o-col-xs-offset-0 {
     margin-left: 0;
   }
 
   @for $i from 1 through 24 {
-    .a-col-xs-#{$i} {
+    .o-col-xs-#{$i} {
       flex-basis: $base-width * $i;
       max-width: $base-width * $i;
     }
 
-    .a-col-xs-offset-#{$i} {
+    .o-col-xs-offset-#{$i} {
       margin-left: $base-width * $i;
     }
   }
 }
 
 @media screen and (min-width: $sm-breaking-point) {
-  .a-col-sm-0 {
+  .o-col-sm-0 {
     flex: 0 0 auto;
   }
 
-  .a-col-sm-offset-0 {
+  .o-col-sm-offset-0 {
     margin-left: 0;
   }
 
   @for $i from 1 through 24 {
-    .a-col-sm-#{$i} {
+    .o-col-sm-#{$i} {
       flex-basis: $base-width * $i;
       max-width: $base-width * $i;
     }
 
-    .a-col-sm-offset-#{$i} {
+    .o-col-sm-offset-#{$i} {
       margin-left: $base-width * $i;
     }
   }
 }
 
 @media screen and (min-width: $md-breaking-point) {
-  .a-col-md-0 {
+  .o-col-md-0 {
     flex: 0 0 auto;
   }
 
-  .a-col-md-offset-0 {
+  .o-col-md-offset-0 {
     margin-left: 0;
   }
 
   @for $i from 1 through 24 {
-    .a-col-md-#{$i} {
+    .o-col-md-#{$i} {
       flex-basis: $base-width * $i;
       max-width: $base-width * $i;
     }
 
-    .a-col-md-offset-#{$i} {
+    .o-col-md-offset-#{$i} {
       margin-left: $base-width * $i;
     }
   }
 }
 
 @media screen and (min-width: $lg-breaking-point) {
-  .a-col-lg-0 {
+  .o-col-lg-0 {
     flex: 0 0 auto;
   }
 
-  .a-col-lg-offset-0 {
+  .o-col-lg-offset-0 {
     margin-left: 0;
   }
 
   @for $i from 1 through 24 {
-    .a-col-lg-#{$i} {
+    .o-col-lg-#{$i} {
       flex-basis: $base-width * $i;
       max-width: $base-width * $i;
     }
 
-    .a-col-lg-offset-#{$i} {
+    .o-col-lg-offset-#{$i} {
       margin-left: $base-width * $i;
     }
   }
 }
 
 @media screen and (min-width: $xl-breaking-point) {
-  .a-col-xl-0 {
+  .o-col-xl-0 {
     flex: 0 0 auto;
   }
 
-  .a-col-xl-offset-0 {
+  .o-col-xl-offset-0 {
     margin-left: 0;
   }
 
   @for $i from 1 through 24 {
-    .a-col-xl-#{$i} {
+    .o-col-xl-#{$i} {
       flex-basis: $base-width * $i;
       max-width: $base-width * $i;
     }
 
-    .a-col-xl-offset-#{$i} {
+    .o-col-xl-offset-#{$i} {
       margin-left: $base-width * $i;
     }
   }

@@ -1,6 +1,6 @@
 @import 'variables';
 
-.a-button {
+.o-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -18,7 +18,7 @@
     color: mix(#FFF, $color-text-regular, 50%);
   }
 
-  &.a-button--default {
+  &.o-button--default {
 
     &:hover, &:active {
       background-color: mix(#FFF, $color-primary, 90%);
@@ -49,7 +49,7 @@
     }
   }
 
-  &.a-button--primary {
+  &.o-button--primary {
     color: #FFF;
     background-color: $color-primary;
     border-color: $color-primary;
@@ -87,7 +87,7 @@
     }
   }
 
-  &.a-button--secondary {
+  &.o-button--secondary {
     color: #FFF;
     background-color: $color-secondary;
     border-color: $color-secondary;
@@ -125,7 +125,7 @@
     }
   }
 
-  &.a-button--info {
+  &.o-button--info {
     color: #FFF;
     background-color: $color-info;
     border-color: $color-info;
@@ -162,7 +162,7 @@
     }
   }
 
-  &.a-button--success {
+  &.o-button--success {
     color: #FFF;
     background-color: $color-success;
     border-color: $color-success;
@@ -200,7 +200,7 @@
     }
   }
 
-  &.a-button--warning {
+  &.o-button--warning {
     color: #FFF;
     background-color: $color-warning;
     border-color: $color-warning;
@@ -238,7 +238,7 @@
     }
   }
 
-  &.a-button--danger {
+  &.o-button--danger {
     color: #FFF;
     background-color: $color-danger;
     border-color: $color-danger;
@@ -276,7 +276,7 @@
     }
   }
 
-  &.a-button--text {
+  &.o-button--text {
     color: $color-primary;
     background-color: transparent;
     border-color: transparent;
@@ -295,19 +295,19 @@
     }
   }
 
-  &.a-button--mini {
+  &.o-button--mini {
     padding: .3rem .9rem;
   }
 
-  &.a-button--small {
+  &.o-button--small {
     padding: .5rem 1.5rem;
   }
 
-  &.a-button--normal {
+  &.o-button--normal {
     padding: 1rem 3rem;
   }
 
-  &.a-button--large {
+  &.o-button--large {
     padding: 1.25rem 4rem;
     font-size: 1.1rem;
   }
@@ -324,6 +324,6 @@
   }
 }
 
-.a-button + .a-button {
+.o-button + .o-button {
   margin-left: .5rem;
 }

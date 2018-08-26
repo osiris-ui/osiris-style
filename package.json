@@ -1,10 +1,11 @@
 {
   "name": "@osiris-ui/style",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Osiris scss theme with variables",
   "main": "dist/osiris-style.css",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build:css": "node-sass --include-path src src/index.scss dist/osiris-style.css --output-style compressed",

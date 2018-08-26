@@ -1,10 +1,10 @@
 @import 'variables';
 
-.a-form {
+.o-form {
   display: block;
 }
 
-.a-form-item {
+.o-form-item {
   display: flex;
   align-items: center;
 
@@ -18,8 +18,8 @@
   }
 }
 
-.a-form--top {
-  .a-form-item {
+.o-form--top {
+  .o-form-item {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -30,8 +30,8 @@
   }
 }
 
-.a-form--left {
-  .a-form-item {
+.o-form--left {
+  .o-form-item {
     justify-content: flex-start;
 
     &__label {
@@ -40,8 +40,8 @@
   }
 }
 
-.a-form--right {
-  .a-form-item {
+.o-form--right {
+  .o-form-item {
     justify-content: flex-end;
 
     &__label {

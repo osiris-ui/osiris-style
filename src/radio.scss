@@ -1,6 +1,6 @@
 @import 'variables';
 
-.a-radio {
+.o-radio {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -46,7 +46,7 @@
 
   &.is-disabled {
     color: $color-border-light;
-    .a-radio__label:before {
+    .o-radio__label:before {
       border-color: $color-border-light;
     }
   }
