@@ -117,3 +117,27 @@ hr {
   border: 0;
   border-top: 1px solid $color-border-lighter;
 }
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.color-info {
+  color: $color-info;
+}
+
+.color-success {
+  color: $color-success;
+}
+
+.color-warning {
+  color: $color-warning;
+}
+
+.color-danger {
+  color: $color-danger;
+}
