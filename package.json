@@ -1,6 +1,6 @@
 {
   "name": "@osiris-ui/style",
-  "version": "0.7.2",
+  "version": "0.9.0",
   "description": "Osiris scss theme with variables",
   "main": "dist/osiris-style.css",
   "files": [
