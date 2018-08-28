@@ -7,6 +7,7 @@
 .o-form-item {
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 
   &__content {
     flex: 1 1 auto;
@@ -15,6 +16,13 @@
   &__label {
     color: $color-text-regular;
     margin-right: 1rem;
+  }
+
+  &__error {
+    position: absolute;
+    color: $color-danger;
+    font-size: .7rem;
+    display: block
   }
 }
 
