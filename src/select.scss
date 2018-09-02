@@ -5,8 +5,11 @@
   position: relative;
   max-width: 100%;
 
-  &__trigger {
+  &__dropdown, &__trigger {
     width: 100%;
+  }
+
+  &__trigger {
     display: block;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -85,19 +88,53 @@
     }
   }
 
+  &__dropdown__inner {
+    position: relative;
+    background-color: #FFF;
+  }
+
   &__list {
+    max-height: 150px;
+    overflow-y: hidden;
+    overflow-x: hidden;
     margin: 0;
-    padding: 0;
+    text-align: left;
+    padding: .3rem 4px .3rem 0;
     border: 1px solid $color-border-lighter;
     box-shadow: 0 0 11px rgba(33,33,33,.2);
     border-radius: 4px;
 
+    &:hover {
+      overflow-y: scroll;
+      padding-right: 0;
+    }
+
     & li {
+      list-style: none;
       padding: .8rem;
+      width: calc(100% + 4px);
 
       &:hover, &.is-highlighted {
         background-color: mix($color-primary, white, 10%);
       }
     }
+
+        /* Scrollbar Styling */
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: mix(white, $color-primary, 50%);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: mix(black, $color-primary, 5%);
+    }
   }
 }
+
