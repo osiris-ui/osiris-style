@@ -1,0 +1,103 @@
+@import 'variables';
+
+.o-select {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+
+  &__trigger {
+    width: 100%;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    text-align: left;
+    border: 1px solid $color-border-lighter;
+    color: $color-text-regular;
+    outline: none;
+    padding-right: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover, &:focus{
+      border-color: $color-primary;
+    }
+  }
+
+  &::placeholder, &__placeholder {
+    color: $color-border-light;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover, &:focus {
+    border-color: $color-primary;
+
+    &__trigger {
+      border-color: $color-primary;
+    }
+
+    &__arrow {
+      color: $color-primary;
+    }
+
+    &::placeholder {
+      color: $color-border-normal;
+    }
+  }
+
+  &:active {
+    border-color: $color-primary;
+  }
+
+  &__arrow {
+    position: absolute;
+    color: $color-border-light;
+    right: 1rem;
+  }
+
+  &:hover i, &:focus i {
+    color: $color-primary;
+  }
+
+  &.o-select--normal {
+    .o-select__trigger {
+      padding-top: .8rem;
+      padding-left: .8rem;
+      padding-bottom: .8rem;
+    }
+
+    &__arrow {
+      top: .8rem;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    border: 1px solid $color-border-lighter;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 4px;
+
+    & li {
+      padding: .8rem;
+
+      &:hover, &.is-highlighted {
+        background-color: mix($color-primary, white, 10%);
+      }
+    }
+  }
+}
