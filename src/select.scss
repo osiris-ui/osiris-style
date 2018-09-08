@@ -29,6 +29,39 @@
     -ms-user-select: none;
     user-select: none;
 
+    & input {
+      -webkit-appearance: none;
+      border: none;
+      background-color: transparent;
+      font-size: 1rem;
+      display: inline-block;
+      width: auto;
+      border-radius: 4px;
+      outline: none;
+
+      &::placeholder {
+        color: $color-border-light;
+      }
+
+      &:hover, &:focus {
+        border-color: $color-primary;
+
+        &::placeholder {
+          color: $color-border-normal;
+        }
+      }
+
+      &:active {
+        border-color: $color-primary;
+      }
+    }
+
+    & input + i {
+      position: absolute;
+      top: 1rem;
+      right: .8rem;
+    }
+
     &:hover {
       cursor: pointer;
     }
