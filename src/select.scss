@@ -93,19 +93,22 @@
     background-color: #FFF;
   }
 
+  &__list, &__empty {
+    border: 1px solid $color-border-lighter;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 4px;
+  }
+
   &__list {
+    padding: .3rem 4px .3rem 0;
     max-height: 150px;
     overflow-y: hidden;
     overflow-x: hidden;
     margin: 0;
     text-align: left;
-    padding: .3rem 4px .3rem 0;
-    border: 1px solid $color-border-lighter;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
-    border-radius: 4px;
 
     &:hover {
-      overflow-y: scroll;
+      overflow-y: auto;
       padding-right: 0;
     }
 
@@ -134,6 +137,78 @@
         -webkit-border-radius: 10px;
         border-radius: 10px;
         background: mix(black, $color-primary, 5%);
+    }
+  }
+
+  &__empty {
+    padding: 1rem 0;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      cursor: auto;
+    }
+  }
+
+  &__list.is-multiple {
+    & li {
+      padding-left: 2rem;
+      position: relative;
+
+      &.is-active {
+        &:before {
+          font-family: 'feather';
+          position: absolute;
+          top: .7rem;
+          left: .5rem;
+          font-size: 1.2rem;
+          font-style: normal;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          color: $color-primary;
+          content: "\e83f",
+        }
+      }
+    }
+  }
+
+  &__multiple-tag {
+    padding: 0 1.25rem 0 .5rem;
+    background-color: $color-primary;
+    color: #FFF;
+    border-radius: 4px;
+    margin-right: .25rem;
+    margin-bottom: .1rem;
+    margin-top: .1rem;
+    display: inline-block;
+    position: relative;
+
+    & .o-select__disselect-button {
+      font-size: .5rem;
+      padding: 0 .25rem;
+      position: absolute;
+      top: 0;
+      border-radius: 0 4px 4px 0;
+      right: 0;
+      max-height: 100%;
+      line-height: 0rem;
+      -webkit-appearance: none;
+      margin: 0;
+      word-spacing: 0;
+      color: #000 !important;
+      border: 0;
+      background-color: transparent;
+
+      & .o-icon {
+        color: #000;
+        font-size: .5rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: mix(black, $color-primary, 10%);
+        color: #FFF;
+      }
     }
   }
 }
