@@ -99,10 +99,10 @@
     border-color: $color-primary;
   }
 
-  &__arrow {
+  &__arrow, &__clearable {
     position: absolute;
     color: $color-border-light;
-    right: 1rem;
+    right: .8rem;
   }
 
   &:hover i, &:focus i {
@@ -241,6 +241,33 @@
         cursor: pointer;
         background-color: mix(black, $color-primary, 10%);
         color: #FFF;
+      }
+    }
+  }
+
+  &__clearable {
+    border: none;
+    background: none;
+    border-radius: 50%;
+    font-size: .75rem;
+    margin: 0;
+    padding: 0;
+    right: .8rem;
+    display: none;
+  }
+
+  &.is-clearable {
+    &:hover {
+      & .o-select__arrow {
+        display: none;
+      }
+
+      & .o-select__clearable {
+        display: inline-block;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
