@@ -1,0 +1,161 @@
+@import 'variables';
+
+.o-alert {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  border: 1px solid;
+  border-radius: 3px;
+
+
+  & i {
+    line-height: 0;
+  }
+
+  & > div > :nth-child(1) {
+    align-self: center;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &.o-alert--primary {
+    color: #FFF;
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &.o-alert--secondary {
+    color: #FFF;
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  &.o-alert--info {
+    color: #FFF;
+    background-color: $color-info;
+    border-color: $color-info;
+  }
+
+  &.o-alert--success {
+    color: #FFF;
+    background-color: $color-success;
+    border-color: $color-success;
+  }
+
+  &.o-alert--warning {
+    color: #FFF;
+    background-color: $color-warning;
+    border-color: $color-warning;
+  }
+
+  &.o-alert--danger {
+    color: #FFF;
+    background-color: $color-danger;
+    border-color: $color-danger;
+  }
+
+  &.o-alert--mini {
+    height: 30px;
+    & .o-alert-icon {
+      padding: 0 calc(30px / 3);
+    }
+    & .o-alert-text > div {
+      padding: 0 5px;
+    }
+    & i {
+      font-size: 15px;
+    }
+  }
+
+  &.o-alert--small {
+    height: 40px;
+    & .o-alert-icon {
+      padding: 0 calc(40px / 3);
+    }
+    & .o-alert-text > div {
+      padding: 0 10px;
+    }
+    & i {
+      font-size: 1rem;
+    }
+  }
+
+  &.o-alert--normal {
+    height: 50px;
+    & .o-alert-icon {
+      padding: 0 calc(50px / 3);
+    }
+    & .o-alert-text > div {
+      padding: 0 15px;
+    }
+    & i {
+      font-size: 1rem;
+    }
+  }
+
+  &.o-alert--large {
+    height: 60px;
+     & .o-alert-text div {
+      font-size: 1.1rem;
+    }
+    & .o-alert-icon {
+      padding: 0 calc(60px / 3);
+    }
+    & .o-alert-text > div {
+      padding: 0 15px;
+    }
+    & i {
+      font-size: 1.1rem;
+    }
+  }
+
+  &.is-round {
+    border-radius: 100px;
+    & > div > div:nth-of-type(1) {
+      border-radius: 100px 0px 0px 100px;
+    }
+    & > div > div:nth-of-type(2) {
+      border-radius: 0px 100px 100px 0px;
+    }
+  }
+}
+
+.o-alert-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: $color-text-primary;
+
+  &.o-alert-text--primary {
+    background-color: mix(#fff, $color-primary, 85%);
+  }
+
+  &.o-alert-text--secondary {
+    background-color: mix(#fff, $color-secondary, 85%);
+  }
+
+  &.o-alert-text--info {
+    background-color: mix(#fff, $color-info, 85%);
+  }
+
+  &.o-alert-text--success {
+    background-color: mix(#fff, $color-success, 85%);
+  }
+
+  &.o-alert-text--warning {
+    background-color: mix(#fff, $color-warning, 85%);
+  }
+
+  &.o-alert-text--danger {
+    background-color: mix(#fff, $color-danger, 85%);
+  }
+}
+
+.o-alert + .o-alert {
+  margin-left: .5rem;
+}
